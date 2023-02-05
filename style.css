@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1A1924;
+  margin: 32px 72px;
+  color: white;
+}
+
+body * {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-svg svg {
+  cursor: pointer;
+}
+
+.chat-header span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.header-image img {
+  width: 48px;
+  height: 48px;
+  border-radius: 999999px;
+  margin-right: 16px;
+}
+
+.header-name h1 {
+  font-size: 16px;
+}
+
+.header-name p {
+  color: #00B37E;
+  font-size: 12px;
+}
+
+span {
+  font-weight: 400;
+  color: #E1E1E6;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 14px;
+}
+
+.message {
+  display: flex;
+  padding: 14px;
+  gap: 10px;
+  border-radius: 0px 8px 8px 8px;
+
+  width: fit-content;
+  height: fit-content;
+  margin-top: 10px;
+}
+
+.message p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #E1E1E6;
+}
+
+.m-r {
+  background-color: #633BBC;
+}
+
+.m-s {
+  background-color: #07847E;
+}
+
+.chat-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.message-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.recieved {
+  align-items: flex-start;
+}
+
+.send {
+  align-items: flex-end;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  background: #282843;
+  border-radius: 9999px;
+  padding: 14px 24px;
+}
+
+.input input {
+  flex: 1;
+  outline: none;
+  color: #E1E1E6;
+}
+
+.input:focus-within {
+  outline: 2px solid white;
+}
+
+.input input::placeholder {
+  color: #E1E1E6;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+input, button {
+  border: none;
+  background-color: transparent;
+}
+
+.input svg {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+@media (max-width: 895px) {
+  body {
+  margin: 24px 32px;
+  }
+
+  .chat-header span {
+    margin-top: 26px;
+    margin-bottom: 30px;
+  }
+
+  .message {
+    max-width: 160px;
+  }
+
+  .message p {
+    text-align: start;
+  }
+}
